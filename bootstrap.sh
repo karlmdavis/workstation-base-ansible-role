@@ -50,7 +50,7 @@ macos_is_brew_package_installed() {
 #
 # $1: The name of the Homebrew package to check/install.
 macos_brew_ensure_package() {
-  if [[ "$(macos_is_brew_package_installed python3)" != 'true' ]]; then
+  if [[ "$(macos_is_brew_package_installed "${1}")" != 'true' ]]; then
     echo "TRACE: Homebrew:'${1}': installing..."
     brew install "${1}"
     echo "TRACE: Homebrew:'${1}': installed."
