@@ -101,7 +101,7 @@ if [[ $(is_macosx) == "true" ]]; then
   macos_bootstrap
 
   echo ""
-  echo 'Python'\''s pipenv now installed and available for use, e.g. `pipenv install --three <PACKAGE_SPEC>`.'
+  echo 'Python'"'"'s pipenv now installed and available for use, e.g. `pipenv install --three <PACKAGE_SPEC>`.'
   #echo 'Ansible now installed and available for use via `pipenv run ...`,'
   #echo 'e.g. `pipenv run ansible-playbook --help`.'
 else
